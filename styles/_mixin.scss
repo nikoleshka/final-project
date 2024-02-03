@@ -1,0 +1,19 @@
+@mixin column($gap: $spacer) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+@mixin row($gap: $spacer,$justify: flex-start, $alignItems: flex-start){
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $alignItems;
+  gap: $gap;
+}
+
+@mixin lightside($color: $primary-color){
+  color: $color;
+}
+@mixin darkside($color: $light-text-color){
+  color: $color;
+}
